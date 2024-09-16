@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula_12</title>
+</head>
+<body>
+    <h1>Exemplo de Tabela</h1>
+    <table border="1">
+        <thead>
+            <th>Produtos</th>
+            <th>Preço</th>
+        </thead>
+        <tbody>
+            <tr>    
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th colspan="2">Disponibilidade</th>
+            <!--Espanção em coluna--> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td rowspan="2">Disponível</td>
+                <!--Espanção em linha-->
+                <td>Entregue em 24hr</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 29,90</td>
+                <td>Entrega em 48hr</td>
+            </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>--</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>    
+            <th rowspan="2">Funcionários</th>
+            <th rowspan="2">Semestre</th>
+            <th colspan="2">Gastos</th>
+            <th colspan="2">Lucros</th>
+        
+            <tr>
+                <th>Líquido</td>
+                <th>Bruto</th>
+                <th>Líquido</th>
+                <th>Bruto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td>
+                <td>1º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Maria</td>
+                <td>1º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>300</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <th colspan="2">Brasil</th>
+        <tr>
+            <th>Estado</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">São Paulo</td>
+                <td>Corinthians</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Santos</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Rio de Janeiro</td>
+                <td>Botafogo</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+            </tr>
+            <tr>
+                <td>Fluminense</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
