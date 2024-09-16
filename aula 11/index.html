@@ -5,95 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula_11</title>
-    <style>
-        big{
-            font-size: 20px;
-        }
-        small{
-            font-size: 10px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica)</p>
-    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (com semântica</p> 
-    <h2>Itálico / Ênfase</h2>
-    <p>Nesta frase vamos entra com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
-    <p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com samântica)</p>
-    <h2>Texto marcador</h2>
-    <p>Aqui vamos usar um texto com <mark style="background-color: green;">destaque de marcador de texto</mark> usando mark</p>
-    <p>Aqui vamos usar um texto com <mark style="background-color: yellow;">destaque de marcador de texto</mark>  usando mark</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estmos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p>
-    <h2>Texto deletado</h2>
-    <p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluído</del>da frase (forma semântica)</p>
-    <h2>Texto inserido</h2>
-    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins>na frase de forma semântica</p>
-    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u>na frase de forma não semântica</p>
-    <h2>Texto sobrescrito</h2>
-    <p>vamos demonstrar uma formula da equação do segundo granu ax<sup>2</sup>+ bx + c = 0 usando a tag sup</p>
-    <h2>Texto subescrito</h2>
-    <p>vamos demonstrar o texto subescrito com a formula da água H<sub>2</sub>O</p>
-    <h2>Trecho de código fonte</h2>
-    <h2>Citações (quotation) simples</h2>
-    <p>segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
-    <h2>Citações completas (livros)</h2>
-    <p>Segundo Sandra Kussunoki no seu livro "A Dança e o Ventre":</p>
-    <!--precisa ser terminado-->
+    <h1>Exemplo de Tabela</h1>
+    <table border="1">
+        <thead>
+            <th>Produtos</th>
+            <th>Preço</th>
+        </thead>
+        <tbody>
+            <tr>    
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
     <hr>
-    <h2>Exemplo de lista ordenada</h2>
-    <ol type="A" start="1">
-        <li>Acordar</li>
-            <!--Exemplo de comentário-->
-        <li>Malhar na academia</li>
-        <li>Trabalhar</li>
-        <li>Almoçar</li>
-        <li>Ir para a faculdade</li>
-        <li>Dormir</li>
-    </ol>
-    <br>
-    <h2>Exemplo de lista não ordenada</h2>
-    <ul type="cicle">
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Leite</li>
-        <li>Manteiga</li>
-        <li>Maçã</li>
-        <li>Banana</li>
-        <li>Tomate</li>
-        <li>Macarrão</li>
-    </ul>
-    <br>
-    <ul type="square">
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Leite</li>
-        <li>Manteiga</li>
-        <li>Maçã</li>
-        <li>Banana</li>
-        <li>Tomate</li>
-        <li>Macarrão</li>
-    </ul>
-    <br>
-    <ul type="disk">
-        <li>Arroz</li>
-        <li>Feijão</li>
-        <li>Leite</li>
-        <li>Manteiga</li>
-        <li>Maçã</li>
-        <li>Banana</li>
-        <li>Tomate</li>
-        <li>Macarrão</li>
-    </ul>
+    <table border="1">
+        <thead>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th colspan="2">Disponibilidade</th>
+            <!--Espanção em coluna--> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td rowspan="2">Disponível</td>
+                <!--Espanção em linha-->
+                <td>Entregue em 24hr</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 29,90</td>
+                <td>Entrega em 48hr</td>
+            </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>--</td>
+            </tr>
+        </tfoot>
+    </table>
     <hr>
-    <h2>Exemplo de lista de definição</h2>
-    <dl>Kg</dl>
-        <dd>Kilograma</dd>
-    <dl>Cm</dl>
-        <dd>Centímetro</dd>
-    <dl>M</dl>
-        <dd>Metro</dd>
+    <table border="1">
+        <thead>    
+            <th rowspan="2">Funcionários</th>
+            <th rowspan="2">Semestre</th>
+            <th colspan="2">Gastos</th>
+            <th colspan="2">Lucros</th>
+        
+            <tr>
+                <th>Líquido</td>
+                <th>Bruto</th>
+                <th>Líquido</th>
+                <th>Bruto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td>
+                <td>1º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Maria</td>
+                <td>1º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>300</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>1000</td>
+                <td>1200</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <th colspan="2">Brasil</th>
+        <tr>
+            <th>Estado</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">São Paulo</td>
+                <td>Corinthians</td>
+            </tr>
+            <tr>
+                <td>Palmeiras</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Santos</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Rio de Janeiro</td>
+                <td>Botafogo</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+            </tr>
+            <tr>
+                <td>Vasco</td>
+            </tr>
+            <tr>
+                <td>Fluminense</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
