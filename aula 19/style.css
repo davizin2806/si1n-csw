@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: rgb(5, 196, 5);
+    --cor2: rgb(5, 150, 150);
+    
+    --fonte: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#titulo1{
+    text-align: center;
+    color: rgb(32, 113, 167);
+    font-family: var(--fonte);
+}
+
+.titulo2{
+    text-align: right;
+    color: var(--cor2);
+}
+
+.titulo3{
+    text-align: left;
+    color: var(--cor1);
+}
+
+#titulos{
+    text-align: left;
+    color: green;
+    font-family: var(--fonte);
+}
+
+#texto{
+    text-align: justify;
+}
