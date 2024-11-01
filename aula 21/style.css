@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+}
+
+li > span{
+    color: lightgray;
+}
+
+#p1{
+    color: coral;
+}
+
+#p1:hover{
+    color: rgba(122, 122, 19, 0.534);
+}
+
+p > span{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    color: salmon;
+    text-decoration: none;
+}
+
+a:visited{
+    color: darksalmon;
+}
+
+a:hover{
+    color: rgba(122, 122, 19, 0.534);
+}
