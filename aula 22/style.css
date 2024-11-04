@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400px;
+    font-style: normal;
+}  
+
+.lora {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
