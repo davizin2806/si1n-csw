@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24</title>
+</head>
+<body>
+    <input id="inputUsuario" size="60">
+    <br>
+    <input id="UsuarioInput" size="60"> 
+    <br>
+    <button onclick="enviaResposta()">Enviar</button>
+<br>
+    <script type="text/JavaScript">
+        function enviaResposta() {
+            var IU = document.getElementById('inputUsuario').value;
+            var UI = document.getElementById('UsuarioInput').value;
+            window.alert('Nome é ' + UI + ' ,' + IU);
+        }
+    </script> 
+</body>
+</html>
