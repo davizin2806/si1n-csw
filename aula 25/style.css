@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+div{
+    display: flex;
+}
+
+div > input{
+    margin: 4px;
+}
